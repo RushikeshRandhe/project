@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<style> 
+body
+{
+background-image:url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg')
+}
+form{
+text-align:center;
+border:8px solid black;
+padding:40px;
+width:400px;
+margin:0 auto;
+color:blue;
+background-color:#f0f8ff;
+border-color:#9B59B6;
+}
+input[type="text"],input[type="email"],input[type="date"],input[type="file"],input[type="password",input[type="number"],input[type="tel"] {
+color:red;
+background-color:blue;
+padding:20px;
+}
+input[type="submit"]{
+color:white;
+background-color:#e8f5e9
+}
+
+
+</style>
+
+<title> registation </title>
+</head>
+<body>
+<form>
+<h2 style= "color:orange" >CREATE ACCOUNT</h2>
+
+<lable for="username">enter your name : </lable><br>
+<input type="text" name="username" placeholder="enter your name" id="username" required><br><br>
+
+<lable for="email"> enter your email : <br>
+<input type="email" name="email" placeholder="email" id="email" required><br><br>
+
+<lable for="password">password :</lable><br>
+<input type="password" name="password" id="password" placeholder="password" required><br><br>
+
+<lable for="date"> enter your DOB : </lable><br>
+<input type="date" name"dob" palceholder="dd/mm/yy" id="date"><br><br>
+
+<label for="file">Upload your photo :</label><br>
+<input type="file" id="file" name="file"><br><br>
+
+<lable for="aadhar number">enter your aadhar number</lable><br>
+<input type="text" id="number" placeholder="enter your aadhar no" pattern="[0-9]{12}" maxlength="12" required><br><br>
+
+<label for="aadhar">Upload your aadhar card :</label><br><br>
+<input type="file" id="aadhar" name="aadhar"><br><br>
+
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" maxlength="10" required><br><br>
+
+<input type="submit" value="submit" style="color:white;background-color:green"><br><br>
+<input type="button" value="go back" style="color:white;background-color:red;float:left" onclick="window.location.href='2form.html'">
+</form>
+</body>
+</html>
+
+
